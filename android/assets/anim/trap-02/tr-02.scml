@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="press-01.png" width="256" height="256" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <obj_info name="bone_000" type="bone" w="344.545" h="10"/>
+        <obj_info name="bone_001" type="bone" w="355.472" h="10"/>
+        <animation id="0" name="idle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="2" key="0"/>
+                    <bone_ref id="1" timeline="3" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="1" timeline="1" key="0" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="press-01">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-1.157287" y="127.186945" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="press-01_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="0" y="128"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-500"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="500" angle="180"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="hit" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="2" key="0"/>
+                    <bone_ref id="1" timeline="3" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="92">
+                    <bone_ref id="0" timeline="2" key="1"/>
+                    <bone_ref id="1" timeline="3" key="1"/>
+                    <object_ref id="0" parent="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" parent="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="800">
+                    <bone_ref id="0" timeline="2" key="2"/>
+                    <bone_ref id="1" timeline="3" key="2"/>
+                    <object_ref id="0" parent="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" parent="1" timeline="1" key="2" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="press-01">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-1.157287" y="127.186945" angle="0"/>
+                </key>
+                <key id="1" time="92" spin="0">
+                    <object folder="0" file="0" x="-1.157287" y="127.186945" angle="0"/>
+                </key>
+                <key id="2" time="800" spin="0">
+                    <object folder="0" file="0" x="-1.157287" y="127.186945" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="press-01_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="0" y="128"/>
+                </key>
+                <key id="1" time="92" spin="0">
+                    <object folder="0" file="0" x="0" y="128"/>
+                </key>
+                <key id="2" time="800" spin="0">
+                    <object folder="0" file="0" x="0" y="128"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-500"/>
+                </key>
+                <key id="1" time="92" spin="0">
+                    <bone x="-200"/>
+                </key>
+                <key id="2" time="800" spin="0">
+                    <bone x="-200.9207"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="500" angle="180"/>
+                </key>
+                <key id="1" time="92" spin="0">
+                    <bone x="200" angle="180"/>
+                </key>
+                <key id="2" time="800" spin="0">
+                    <bone x="200.9207" angle="180"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+    <entity id="1" name="entity_001">
+        <obj_info name="bone_000" type="bone" w="122.659" h="10"/>
+        <animation id="0" name="idle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="1" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="press-01">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="99.182701" y="-128.634333" angle="179.635064"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone angle="180.364936"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="hit_back" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="1" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="99">
+                    <bone_ref id="0" timeline="1" key="1"/>
+                    <object_ref id="0" parent="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="198">
+                    <bone_ref id="0" timeline="1" key="2"/>
+                    <object_ref id="0" parent="0" timeline="0" key="2" z_index="0"/>
+                </key>
+                <key id="3" time="299">
+                    <bone_ref id="0" timeline="1" key="3"/>
+                    <object_ref id="0" parent="0" timeline="0" key="3" z_index="0"/>
+                </key>
+                <key id="4" time="600">
+                    <bone_ref id="0" timeline="1" key="4"/>
+                    <object_ref id="0" parent="0" timeline="0" key="3" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="press-01">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="99.182701" y="-128.634333" angle="179.635064"/>
+                </key>
+                <key id="1" time="99" spin="0">
+                    <object folder="0" file="0" x="99.182701" y="-128.634333" angle="179.635064"/>
+                </key>
+                <key id="2" time="198" spin="0">
+                    <object folder="0" file="0" x="99.182701" y="-128.634333" angle="179.635064"/>
+                </key>
+                <key id="3" time="299" spin="0">
+                    <object folder="0" file="0" x="99.182701" y="-128.634333" angle="179.635064"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone angle="180.364936"/>
+                </key>
+                <key id="1" time="99" spin="-1">
+                    <bone x="150" angle="90"/>
+                </key>
+                <key id="2" time="198" spin="0">
+                    <bone x="120" angle="0"/>
+                </key>
+                <key id="3" time="299">
+                    <bone x="-300" angle="0"/>
+                </key>
+                <key id="4" time="600">
+                    <bone angle="180"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="hit" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="1" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="100">
+                    <bone_ref id="0" timeline="1" key="1"/>
+                    <object_ref id="0" parent="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="2" time="499">
+                    <bone_ref id="0" timeline="1" key="2"/>
+                    <object_ref id="0" parent="0" timeline="0" key="2" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="press-01">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="99.182701" y="-128.634333" angle="179.635064"/>
+                </key>
+                <key id="1" time="100" spin="0">
+                    <object folder="0" file="0" x="99.182701" y="-128.634333" angle="179.635064"/>
+                </key>
+                <key id="2" time="499" spin="0">
+                    <object folder="0" file="0" x="99.182701" y="-128.634333" angle="179.635064"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone angle="180.364936"/>
+                </key>
+                <key id="1" time="100" spin="0">
+                    <bone x="200" angle="180.364936"/>
+                </key>
+                <key id="2" time="499" spin="0">
+                    <bone x="200.33333" angle="180.364936"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="3" name="" length="1000" interval="100">
+            <mainline>
+                <key id="0"/>
+            </mainline>
+        </animation>
+    </entity>
+</spriter_data>

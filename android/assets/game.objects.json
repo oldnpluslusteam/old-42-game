@@ -50,6 +50,80 @@
           "scale": 1,
         },
       }
-    }
+    },
+    "trap-02": {
+      "inherit": ["animated-trap"],
+      "components": {
+        "body": { "bodyType": "StaticBody" },
+        "box fixture": {
+          "size": [50, 60],
+          "collisionBeginEvent": "playerHit",
+          "sensor": true,
+          "center": [25, 0],
+        },
+        "block": {
+          "type": "box fixture",
+          "size": [32, 64],
+          "center": [0, 0],
+        },
+        "spriter animation": {
+          "animation": "anim/trap-02/tr-02.scml",
+          "animationEntity": "entity_001",
+          "scale": 0.25,
+        },
+      }
+    },
+    "trap-03": {
+      "inherit": ["trap-trigger"],
+      "components": {
+        "body": { "bodyType": "StaticBody" },
+        "box fixture": {
+          "size": [50, 30],
+          "collisionBeginEvent": "playerHit",
+          "sensor": true,
+          "center": [-25, 0],
+        },
+        "block": {
+          "type": "box fixture",
+          "size": [32, 64],
+          "center": [0, 0],
+        },
+        "spriter animation": {
+          "animation": "anim/trap-02/tr-02.scml",
+          "animationEntity": "entity_001",
+          "scale": 0.25,
+        },
+        "com.github.oldnpluslusteam.old42_game.components.AnimatedTrapLogic$Decl": {
+          "hitAnimation": "hit_back"
+        },
+      }
+    },
+    "trap-04": {
+      "inherit": ["animated-trap"],
+      "components": {
+        "body": { "bodyType": "StaticBody" },
+        "box fixture": {
+          "size": [100, 30],
+          "collisionBeginEvent": "playerHit",
+          "sensor": true,
+          "center": [0, 0],
+        },
+        "block1": {
+          "type": "box fixture",
+          "size": [25, 64],
+          "center": [100, 0],
+        },
+        "block2": {
+          "type": "box fixture",
+          "size": [25, 64],
+          "center": [-100, 0],
+        },
+        "spriter animation": {
+          "animation": "anim/trap-02/tr-02.scml",
+          "animationEntity": "entity_000",
+          "scale": 0.25,
+        },
+      }
+    },
   }
 }

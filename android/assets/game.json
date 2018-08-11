@@ -30,6 +30,11 @@
           "effect": "death.p",
           "masterProperty": "particles"
         },
+        "particles1": {
+          "type": "particles",
+          "effect": "death-small.p",
+          "masterProperty": "particles"
+        },
         /*
         "one shot sound": {
           "event": "position",
@@ -91,7 +96,7 @@
     },
 
     {
-      "inherit": ["trap-01"],
+      "inherit": ["trap-04"],
       "properties": {
         "position": ["0", "-150"]
       }
