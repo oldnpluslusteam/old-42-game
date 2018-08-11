@@ -41,6 +41,7 @@ public class TheGame extends Application {
 		modules.add(new CommonComponents());
 
 		modules.add(new ControllersModule());
+		modules.add(new GlobalParticlePool());
 
 		modules.add(new StartupScreenModule());
 

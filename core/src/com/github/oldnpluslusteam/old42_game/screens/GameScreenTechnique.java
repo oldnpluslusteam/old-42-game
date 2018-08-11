@@ -4,7 +4,7 @@ import com.github.alexeybond.partly_solid_bicycle.drawing.Pass;
 import com.github.alexeybond.partly_solid_bicycle.drawing.tech.PlainTechnique;
 
 public class GameScreenTechnique extends PlainTechnique {
-    private Pass mainCamera, background, main, foreground, debug, light;
+    private Pass mainCamera, background, main, foreground, particles, debug, light;
 
     @Override
     protected void setup() {
@@ -14,6 +14,7 @@ public class GameScreenTechnique extends PlainTechnique {
         foreground = newPass("game-foreground");
         debug = newPass("game-debug");
         light = newPass("game-light");
+        particles = newPass("game-particles");
     }
 
     @Override
@@ -24,6 +25,7 @@ public class GameScreenTechnique extends PlainTechnique {
         doPass(background);
         doPass(main);
         doPass(foreground);
+        doPass(particles);
         doPass(debug);
     }
 }

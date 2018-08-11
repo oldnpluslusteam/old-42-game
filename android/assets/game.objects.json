@@ -1,9 +1,32 @@
 {
   "classes": {
+    "trap-trigger": {
+      "components": {
+        "generic trigger": {
+          "type": "generic trigger",
+          "ownerEvent": "playerHit",
+          "targetEvent": "hitTrap",
+        }
+      }
+    },
+
+
     "wall-01": {
       "components": {
         "body": { "bodyType": "StaticBody" },
-        "box fixture": { "size": [100, 20] },
+        "box fixture": { "size": [250, 32] },
+        "sprite": { "sprite": "wall-01" },
+      }
+    },
+
+    "trap-01": {
+      "inherit": ["trap-trigger"],
+      "components": {
+        "body": { "bodyType": "StaticBody" },
+        "box fixture": {
+          "size": [20, 20],
+          "collisionBeginEvent": "playerHit"
+        }
       }
     }
   }

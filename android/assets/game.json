@@ -2,7 +2,7 @@
   "include": [
     "game.debug.json",
     "game.objects.json",
-    "game.controllers.json",
+    "game.controllers.json"
   ],
   "classes": {
     "camera": {
@@ -20,7 +20,22 @@
       },
       "properties": {
         "zoom": ["0.5"],
-        "zoomFunction": ["fixed diagonal zoom function", "1000"],
+        "zoomFunction": ["fixed diagonal zoom function", "1000"]
+      }
+    },
+
+    "player-death-effects": {
+      "components": {
+        "particles": {
+          "effect": "death.p",
+          "masterProperty": "particles"
+        },
+        /*
+        "one shot sound": {
+          "event": "position",
+          "sound": "death.wav",
+        },
+        //*/
       }
     },
 
@@ -28,7 +43,7 @@
       "components": {
         "body": {
           "bodyType": "DynamicBody",
-          "noRotation": true,
+          "noRotation": true
         },
         "circle fixture": {
           "radius": 20,
@@ -37,7 +52,20 @@
           ]
         },
         "tag:player": { "type": "tag", "tag": "player" },
-      },
+        "sprite": {
+          "sprite": "player-01",
+          "scale": 0.7
+        },
+        "destroy on event": {
+          "event": "hitTrap",
+          "initEvent": true,
+          "preDestroyEvent": "preDestroy"
+        },
+        "spawn on event": {
+          "classes": ["player-death-effects"],
+          "event": "preDestroy"
+        }
+      }
     }
   },
 
@@ -55,5 +83,12 @@
         "position": ["0", "50"]
       }
     },
+
+    {
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["0", "-150"]
+      }
+    }
   ]
 }
