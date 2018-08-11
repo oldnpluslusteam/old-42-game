@@ -14,6 +14,7 @@ import com.github.alexeybond.partly_solid_bicycle.game.declarative.visitor.impl.
 import com.github.alexeybond.partly_solid_bicycle.ioc.IoC;
 import com.github.alexeybond.partly_solid_bicycle.util.event.Event;
 import com.github.alexeybond.partly_solid_bicycle.util.event.EventListener;
+import com.github.alexeybond.partly_solid_bicycle.util.event.props.BooleanProperty;
 import com.github.alexeybond.partly_solid_bicycle.util.parts.AParts;
 import main.java.com.github.alexeybond.partly_solid_bicycle.ext.controllers.AnyControllerSystem;
 
@@ -53,6 +54,15 @@ public class GameScreen extends DefaultScreen {
             public boolean onTriggered(Event event) {
                 next(new WinScreen(game, scene()));
 
+                return true;
+            }
+        });
+
+        input().keyEvent("R").subscribe(new EventListener<BooleanProperty>() {
+            @Override
+            public boolean onTriggered(BooleanProperty event) {
+                if (!event.get()) return false;
+                next(new GameScreen());
                 return true;
             }
         });

@@ -64,6 +64,8 @@
         "spawn on event": {
           "classes": ["player-death-effects"],
           "event": "preDestroy"
+        },
+        "com.github.oldnpluslusteam.old42_game.components.Light$Decl": {
         }
       }
     }
