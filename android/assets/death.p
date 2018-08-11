@@ -69,10 +69,12 @@ lowMax: 0.0
 highMin: 32.0
 highMax: 64.0
 relative: false
-scalingCount: 1
-scaling0: 1.0
-timelineCount: 1
+scalingCount: 2
+scaling0: 0.0
+scaling1: 1.0
+timelineCount: 2
 timeline0: 0.0
+timeline1: 0.020952381
 - Velocity - 
 active: true
 lowMin: 0.0
@@ -82,11 +84,11 @@ highMax: 500.0
 relative: false
 scalingCount: 3
 scaling0: 1.0
-scaling1: 0.7303371
+scaling1: 1.0
 scaling2: 0.0
 timelineCount: 3
 timeline0: 0.0
-timeline1: 0.055238094
+timeline1: 0.020952381
 timeline2: 0.0952381
 - Angle - 
 active: true
@@ -104,7 +106,16 @@ timeline0: 0.0
 timeline1: 0.999
 timeline2: 1.0
 - Rotation - 
-active: false
+active: true
+lowMin: 0.0
+lowMax: 0.0
+highMin: 0.0
+highMax: 360.0
+relative: false
+scalingCount: 1
+scaling0: 1.0
+timelineCount: 1
+timeline0: 0.0
 - Wind - 
 active: false
 - Gravity - 
@@ -134,8 +145,8 @@ timeline2: 1.0
 attached: false
 continuous: false
 aligned: false
-additive: true
+additive: false
 behind: false
 premultipliedAlpha: false
 - Image Path -
-particle.png
+blood.png

@@ -18,7 +18,7 @@ import com.github.alexeybond.partly_solid_bicycle.util.event.props.BooleanProper
 import com.github.alexeybond.partly_solid_bicycle.util.event.props.FloatProperty;
 
 public class Light extends BaseRenderComponent {
-    private float scaleMin, scaleMax, decreaseSpeed, increaseSpeed;
+    private float scaleMin, scaleMax, decreaseSpeed, increaseSpeed, deadDecreaseScale;
 
     private float currentScale = 10f;
 
@@ -41,12 +41,13 @@ public class Light extends BaseRenderComponent {
 
     private final Sprite sprite;
 
-    public Light(float scaleMin, float scaleMax, float decreaseSpeed, float increaseSpeed, TextureRegion texture) {
+    public Light(float scaleMin, float scaleMax, float decreaseSpeed, float increaseSpeed, float deadDecreaseScale, TextureRegion texture) {
         super("game-light");
         this.scaleMin = scaleMin;
         this.scaleMax = scaleMax;
         this.decreaseSpeed = decreaseSpeed;
         this.increaseSpeed = increaseSpeed;
+        this.deadDecreaseScale = deadDecreaseScale;
         sprite = new Sprite(texture);
     }
 
@@ -62,8 +63,8 @@ public class Light extends BaseRenderComponent {
     @Override
     public void onDisconnect(Entity entity) {
         lightEnable.set(false);
-        decreaseSpeed *= 0.5;
-        scaleMin = 0.1f;
+        decreaseSpeed *= deadDecreaseScale;
+        scaleMin = 0;
         currentScale = Math.max(currentScale, scaleMax * 0.7f);
 //        super.onDisconnect(entity);
 //        dtSub.clear();
@@ -80,7 +81,8 @@ public class Light extends BaseRenderComponent {
     }
 
     public static class Decl implements ComponentDeclaration {
-        public float scaleMin = 1f, scaleMax = 10f, decreaseSpeed = 1, increaseSpeed = 1;
+        public float scaleMin = 1f, scaleMax = 10f;
+        public float decreaseSpeed = 1, increaseSpeed = 1, deadDecreaseScale= 0.7f;
 
         public String sprite = "particle";
 
@@ -91,6 +93,7 @@ public class Light extends BaseRenderComponent {
                     scaleMax,
                     decreaseSpeed,
                     increaseSpeed,
+                    deadDecreaseScale,
                     IoC.<TextureRegion>resolve("get texture region", sprite));
         }
     }
