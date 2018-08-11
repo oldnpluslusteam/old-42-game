@@ -35,13 +35,21 @@
           "effect": "death-small.p",
           "masterProperty": "particles"
         },
+        "spriter animation": {
+          "animation": "anim/player/player.scml",
+          "animationEntity": "entity_000",
+          "scale": 0.25,
+        },
         /*
         "one shot sound": {
           "event": "position",
           "sound": "death.wav",
         },
         //*/
-      }
+      },
+      "properties": {
+        "animation": ["dead"]
+      },
     },
 
     "player": {
