@@ -37,7 +37,7 @@ public class GameScreen extends DefaultScreen {
     protected void createLayers(AParts<Screen, Layer> layers) {
         super.createLayers(layers);
 
-        ScreenUtils.enableToggleDebug(this, true);
+        ScreenUtils.enableToggleDebug(this, false);
 
         final Game game = layers.add("game", new GameLayerWith2DPhysicalGame()).game();
 

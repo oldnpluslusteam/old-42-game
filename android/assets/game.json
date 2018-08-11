@@ -57,10 +57,6 @@
           ]
         },
         "tag:player": { "type": "tag", "tag": "player" },
-        "sprite": {
-          "sprite": "player-01",
-          "scale": 0.7
-        },
         "destroy on event": {
           "event": "hitTrap",
           "initEvent": true,
@@ -75,6 +71,11 @@
           "gameEvent": "lose",
         },
         "com.github.oldnpluslusteam.old42_game.components.Light$Decl": {
+        },
+        "spriter animation": {
+          "animation": "anim/player/player.scml",
+          "animationEntity": "entity_000",
+          "scale": 0.25,
         },
       }
     }

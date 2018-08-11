@@ -12,11 +12,13 @@ import com.github.alexeybond.partly_solid_bicycle.game.systems.timing.TimingSyst
 import com.github.alexeybond.partly_solid_bicycle.util.event.helpers.Subscription;
 import com.github.alexeybond.partly_solid_bicycle.util.event.props.BooleanProperty;
 import com.github.alexeybond.partly_solid_bicycle.util.event.props.FloatProperty;
+import com.github.alexeybond.partly_solid_bicycle.util.event.props.ObjectProperty;
 
 public class PlayerController implements Component {
     private BooleanProperty keyForward, keyBackward, keyLeft, keyRight;
     private BooleanProperty keyLight, btnLight1, btnLight2;
     private FloatProperty axisX, axisY;
+    private ObjectProperty<String> animationProperty;
 
     private BooleanProperty lightEnable;
     private BodyPhysicsComponent body;
@@ -44,6 +46,8 @@ public class PlayerController implements Component {
         axisX = entity.events().event("axisX", FloatProperty.make());
         axisY = entity.events().event("axisY", FloatProperty.make());
 
+        animationProperty = entity.events().event("animation", ObjectProperty.<String>make());
+
         lightEnable = entity.events().event("lightEnable", BooleanProperty.make());
         body = entity.components().get("body");
 
@@ -65,7 +69,9 @@ public class PlayerController implements Component {
 
         if (x == 0 && y == 0) {
             body.setLinearDamping(1000);
+            animationProperty.set("idle");
         } else {
+            animationProperty.set("move");
             body.setLinearDamping(0);
             body.setLinearVelocity(x * linSpeed, y * linSpeed);
         }

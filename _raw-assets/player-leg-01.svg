@@ -15,8 +15,8 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="player-01.svg"
-   inkscape:export-filename="D:\code\old-42-game\android\assets\player-01.png"
+   sodipodi:docname="player-leg-01.svg"
+   inkscape:export-filename="D:\code\old-42-game\android\assets\anim\player\leg-01.png"
    inkscape:export-xdpi="384.00003"
    inkscape:export-ydpi="384.00003">
   <defs
@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.2"
-     inkscape:cx="11.266928"
-     inkscape:cy="31.786948"
+     inkscape:cx="23.969623"
+     inkscape:cy="29.53829"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -114,7 +114,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -124,28 +124,28 @@
      id="layer1"
      transform="translate(0,-280.06665)">
     <rect
-       style="fill:#bebebe;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6199"
-       width="12.170834"
-       height="12.170827"
-       x="2.3812504"
-       y="282.44791"
-       ry="6.0854135" />
-    <rect
-       style="fill:#fcfcfc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6774"
-       width="4.2333331"
-       height="4.2333269"
-       x="6.3500004"
+       style="fill:#bebebe;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="rect7895"
+       width="3.96875"
+       height="4.2333331"
+       x="2.381249"
        y="286.41666"
-       ry="2.1166635" />
+       ry="2.1166666"
+       rx="1.984375" />
+    <path
+       style="fill:#bebebe;fill-opacity:1;stroke:#bebebe;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 4.4979166,286.41665 10.5833334,1.05833 v 2.11667 l -10.5833333,1.05833 z"
+       id="path7897"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
     <rect
-       style="fill:#070707;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6776"
-       width="1.0583333"
-       height="1.0583333"
-       x="7.9375"
-       y="288.00415"
-       ry="0.52916664" />
+       style="fill:#bebebe;fill-opacity:1;fill-rule:nonzero;stroke:#bebebe;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+       id="rect7899"
+       width="2.1166666"
+       height="2.1166666"
+       x="14.022917"
+       y="287.47498"
+       rx="1.984375"
+       ry="2.1166666" />
   </g>
 </svg>
