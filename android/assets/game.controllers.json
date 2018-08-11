@@ -1,0 +1,45 @@
+{
+  "classes": {
+    "player-controller": {
+      "components": {
+        //* Keyboard input
+        "key bindings": {"bind": {
+          "keyForward": "W",
+          "keyBackward": "S",
+          "keyLeft": "A",
+          "keyRight": "D",
+          "keyLight": "F",
+        }},
+        //*/
+        //* Joystick input
+        "resetButton": {
+          "type": "controller-button",
+          "button": 7,
+          "output": "resetAdaptiveAxes"
+        },
+        "axisX": {
+          "type": "controller-axis-adaptive",
+          "axis": 1,
+          "output": "axisX"
+        },
+        "axisY": {
+          "type": "controller-axis-adaptive",
+          "axis": 0,
+          "output": "axisY"
+        },
+        "buttonLight1": {
+          "type": "controller-button",
+          "button": 0,
+          "output": "btnLight1"
+        },
+        "buttonLight2": {
+          "type": "controller-button",
+          "button": 2,
+          "output": "btnLight2"
+        },
+        //*/
+        "com.github.oldnpluslusteam.old42_game.components.PlayerController$Decl": {}
+      }
+    }
+  }
+}

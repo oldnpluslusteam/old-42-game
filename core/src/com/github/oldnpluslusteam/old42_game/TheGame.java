@@ -2,6 +2,7 @@ package com.github.oldnpluslusteam.old42_game;
 
 import com.github.alexeybond.partly_solid_bicycle.application.Application;
 import com.github.alexeybond.partly_solid_bicycle.application.modules.DefaultLoadingScreenModule;
+import com.github.alexeybond.partly_solid_bicycle.application.modules.LoadProgressManagerModule;
 import com.github.alexeybond.partly_solid_bicycle.drawing.modules.GlobalDrawingState;
 import com.github.alexeybond.partly_solid_bicycle.drawing.modules.GlobalParticlePool;
 import com.github.alexeybond.partly_solid_bicycle.drawing.modules.ShaderLoader;
@@ -16,12 +17,14 @@ import com.github.alexeybond.partly_solid_bicycle.ioc.modules.Modules;
 import com.github.alexeybond.partly_solid_bicycle.music.modules.GlobalMusicPlayer;
 import com.github.alexeybond.partly_solid_bicycle.resource_management.modules.ResourceManagement;
 import com.github.oldnpluslusteam.old42_game.modules.StartupScreenModule;
+import main.java.com.github.alexeybond.partly_solid_bicycle.ext.controllers.ControllersModule;
 
 public class TheGame extends Application {
 	@Override
 	protected Modules setupModules(Modules modules) {
 		modules = super.setupModules(modules);
 
+        modules.add(new LoadProgressManagerModule());
 		modules.add(new ResourceManagement());
 		modules.add(new GlobalDrawingState());
 		modules.add(new GlobalParticlePool());
@@ -36,6 +39,8 @@ public class TheGame extends Application {
 		modules.add(new ZoomFunctionsModule());
 		modules.add(new TaggingComponentsDeclarations());
 		modules.add(new CommonComponents());
+
+		modules.add(new ControllersModule());
 
 		modules.add(new StartupScreenModule());
 

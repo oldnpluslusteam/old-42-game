@@ -1,0 +1,59 @@
+{
+  "include": [
+    "game.debug.json",
+    "game.objects.json",
+    "game.controllers.json",
+  ],
+  "classes": {
+    "camera": {
+      "components": {
+        "camera": {
+          "pass": "setup-main-camera",
+          "globalAlias": "mainCamera"
+        },
+        "attach to tagged": {
+          "tag": "player"
+        },
+        "tag": {
+          "tag": "camera"
+        }
+      },
+      "properties": {
+        "zoom": ["0.5"],
+        "zoomFunction": ["fixed diagonal zoom function", "1000"],
+      }
+    },
+
+    "player": {
+      "components": {
+        "body": {
+          "bodyType": "DynamicBody",
+          "noRotation": true,
+        },
+        "circle fixture": {
+          "radius": 20,
+          "collisionCategories": [
+            "player"
+          ]
+        },
+        "tag:player": { "type": "tag", "tag": "player" },
+      },
+    }
+  },
+
+  "entities": [
+    { /* Player */
+      "inherit": ["player", "player-controller"]
+    },
+    {
+      "inherit": ["camera"]
+    },
+
+    {
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["0", "50"]
+      }
+    },
+  ]
+}
