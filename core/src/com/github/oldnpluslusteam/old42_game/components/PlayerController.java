@@ -79,7 +79,7 @@ public class PlayerController implements Component {
 
     private void updateControl() {
         float x = (keyLeft.get() ? -1f : 0f) + (keyRight.get() ? 1f : 0f) + roundAxis(axisX.get());
-        float y = (keyForward.get() ? 1f : 0f) + (keyBackward.get() ? -1f : 0f) + roundAxis(axisY.get());
+        float y = (keyForward.get() ? 1f : 0f) + (keyBackward.get() ? -1f : 0f) - roundAxis(axisY.get());
         boolean light = keyLight.get() || (btnLight1.get() && btnLight2.get());
 
         x = MathUtils.clamp(x, -1, 1);

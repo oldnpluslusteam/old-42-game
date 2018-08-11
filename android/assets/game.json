@@ -65,8 +65,12 @@
           "classes": ["player-death-effects"],
           "event": "preDestroy"
         },
+        "send event to game": {
+          "ownerEvent": "preDestroy",
+          "gameEvent": "lose",
+        },
         "com.github.oldnpluslusteam.old42_game.components.Light$Decl": {
-        }
+        },
       }
     }
   },

@@ -6,6 +6,7 @@ import com.github.alexeybond.partly_solid_bicycle.application.modules.LoadProgre
 import com.github.alexeybond.partly_solid_bicycle.drawing.modules.GlobalDrawingState;
 import com.github.alexeybond.partly_solid_bicycle.drawing.modules.GlobalParticlePool;
 import com.github.alexeybond.partly_solid_bicycle.drawing.modules.ShaderLoader;
+import com.github.alexeybond.partly_solid_bicycle.ext.spriter_animation.modules.SpriterAnimationModule;
 import com.github.alexeybond.partly_solid_bicycle.game.modules.CommonComponents;
 import com.github.alexeybond.partly_solid_bicycle.game.modules.GameSerialization;
 import com.github.alexeybond.partly_solid_bicycle.game.systems.box2d_physics.modules.PhysicsComponentDeclarations;
@@ -42,6 +43,7 @@ public class TheGame extends Application {
 
 		modules.add(new ControllersModule());
 		modules.add(new GlobalParticlePool());
+		modules.add(new SpriterAnimationModule());
 
 		modules.add(new StartupScreenModule());
 

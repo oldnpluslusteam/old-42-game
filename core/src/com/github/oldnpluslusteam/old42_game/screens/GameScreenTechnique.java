@@ -7,7 +7,7 @@ import com.github.alexeybond.partly_solid_bicycle.drawing.tech.PlainTechnique;
 import com.github.alexeybond.partly_solid_bicycle.ioc.IoC;
 
 public class GameScreenTechnique extends PlainTechnique {
-    private Pass mainCamera, background, main, foreground, particles, debug, light;
+    private Pass mainCamera, background, main, foreground, particles, debug, light, ui;
     private TargetSlot colorSlot, lightSlot;
     private ShaderProgram shader;
 
@@ -25,6 +25,7 @@ public class GameScreenTechnique extends PlainTechnique {
         debug = newPass("game-debug");
         light = newPass("game-light");
         particles = newPass("game-particles");
+        ui = newPass("ui");
 
         colorSlot = target("color");
         lightSlot = target("light");
@@ -41,9 +42,9 @@ public class GameScreenTechnique extends PlainTechnique {
         doPass(mainCamera);
 
         doPass(background);
+        doPass(particles);
         doPass(main);
         doPass(foreground);
-        doPass(particles);
 
         toTarget(lightSlot);
         gl.glClearColor(0,0,0,1);
@@ -57,6 +58,8 @@ public class GameScreenTechnique extends PlainTechnique {
         gl.glActiveTexture(gl.GL_TEXTURE0);
         screenQuad(colorSlot.get().asColorTexture(), true);
         withShader(null);
+
+        doPass(ui);
         doPass(debug);
     }
 }

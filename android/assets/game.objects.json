@@ -10,23 +10,45 @@
       }
     },
 
+    "animated-trap": {
+      "inherit": ["trap-trigger"],
+      "components": {
+        "com.github.oldnpluslusteam.old42_game.components.AnimatedTrapLogic$Decl": {}
+      }
+    },
 
     "wall-01": {
       "components": {
         "body": { "bodyType": "StaticBody" },
         "box fixture": { "size": [250, 32] },
-        "sprite": { "sprite": "wall-01" },
+        "sprite": {
+          "sprite": "wall-01",
+          "pass": "game-foreground",
+          "scale": 0.5,
+        },
       }
     },
 
     "trap-01": {
-      "inherit": ["trap-trigger"],
+      "inherit": ["animated-trap"],
       "components": {
         "body": { "bodyType": "StaticBody" },
         "box fixture": {
-          "size": [20, 20],
-          "collisionBeginEvent": "playerHit"
-        }
+          "size": [40, 10],
+          "collisionBeginEvent": "playerHit",
+          "sensor": true,
+          "center": [20, 0],
+        },
+        "block": {
+          "type": "box fixture",
+          "size": [64, 32],
+          "center": [-32, 0],
+        },
+        "spriter animation": {
+          "animation": "anim/trap-01/tr-01.scml",
+          "animationEntity": "entity_000",
+          "scale": 1,
+        },
       }
     }
   }
