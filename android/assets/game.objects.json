@@ -27,6 +27,17 @@
       }
     },
 
+    "win-trigger": {
+      "components": {
+        "generic trigger": {
+          "type": "generic trigger",
+          "ownerEvent": "playerHit",
+          "targetEvent": "hitWin"
+        },
+        "body": { "bodyType": "StaticBody" }
+      }
+    },
+
     "wall-01": {
       "components": {
         "body": { "bodyType": "StaticBody" },
@@ -162,6 +173,27 @@
           "scale": 0.18
         },
       }
+    },
+
+    "win-trigger-01": {
+      "inherit": ["win-trigger"],
+      "components": {
+        "sensor": {
+          "type": "circle fixture",
+          "radius": 32,
+          "collisionBeginEvent": "playerHit",
+          "collisionMask": [
+            "player"
+          ],
+          "sensor": true,
+          "center": [0, 0],
+        },
+        "sprite": {
+          "sprite": "exit-01",
+          "scale": 0.30,
+          "pass": "game-background",
+        },
+      },
     }
   }
 }

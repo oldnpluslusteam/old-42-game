@@ -52,6 +52,34 @@
       },
     },
 
+    "player-win-effects": {
+      "components": {
+        "spriter animation": {
+          "animation": "anim/player/player.scml",
+          "animationEntity": "entity_000",
+          "scale": 0.25,
+        },
+        "particles1": {
+          "type": "particles",
+          "effect": "win-01.p",
+          "masterProperty": "particles"
+        },
+        "particles2": {
+          "type": "particles",
+          "effect": "win-02.p",
+          "masterProperty": "particles"
+        },
+        "particles3": {
+          "type": "particles",
+          "effect": "win-03.p",
+          "masterProperty": "particles"
+        },
+      },
+      "properties": {
+        "animation": ["win"]
+      },
+    },
+
     "player": {
       "components": {
         "body": {
@@ -70,6 +98,17 @@
           "initEvent": true,
           "preDestroyEvent": "preDestroy"
         },
+        "winDestroy": {
+          "type": "destroy on event",
+          "event": "hitWin",
+          "initEvent": true,
+          "preDestroyEvent": "preWin"
+        },
+        "winSpawn": {
+          "type": "spawn on event",
+          "classes": ["player-win-effects"],
+          "event": "preWin"
+        },
         "spawn on event": {
           "classes": ["player-death-effects"],
           "event": "preDestroy"
@@ -77,6 +116,11 @@
         "send event to game": {
           "ownerEvent": "preDestroy",
           "gameEvent": "lose",
+        },
+        "sendWin": {
+          "type": "send event to game",
+          "ownerEvent": "preWin",
+          "gameEvent": "win",
         },
         "com.github.oldnpluslusteam.old42_game.components.Light$Decl": {
         },
@@ -116,6 +160,13 @@
       "properties": {
         "position": ["150", "-150"]
       }
-    }
+    },
+
+    {
+      "inherit": ["win-trigger-01"],
+      "properties": {
+        "position": ["-200", "-150"]
+      }
+    },
   ]
 }
