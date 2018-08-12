@@ -40,7 +40,7 @@
           "animationEntity": "entity_000",
           "scale": 0.25,
         },
-        /*
+        //*
         "one shot sound": {
           "event": "position",
           "sound": "death.wav",
