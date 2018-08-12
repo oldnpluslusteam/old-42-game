@@ -1,0 +1,317 @@
+{
+  "entities": [
+    /* !!- walls -!! */
+    { // 3
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["0", "100"],
+        "rotation": ["0"],
+      }
+    },
+    { // 4
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["-150", "-50"],
+        "rotation": ["90"],
+      }
+    },
+    { // 5
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["150", "-50"],
+        "rotation": ["90"],
+      }
+    },
+    { // 6
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["-300", "-200"],
+        "rotation": ["0"],
+      }
+    },
+    { // 7
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["-450", "-350"],
+        "rotation": ["90"],
+      }
+    },
+    { // 8
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["-150", "250"],
+        "rotation": ["90"],
+      }
+    },
+    { // 9
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["0", "350"],
+        "rotation": ["0"],
+      }
+    },
+    { // 12
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["250", "350"],
+        "rotation": ["0"],
+      }
+    },
+    { // 21
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["-450", "-600"],
+        "rotation": ["90"],
+      }
+    },
+    { // 22
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["-300", "-750"],
+        "rotation": ["0"],
+      }
+    },
+    { // 23
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["-50", "-750"],
+        "rotation": ["0"],
+      }
+    },
+    { // 24
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["200", "-750"],
+        "rotation": ["0"],
+      }
+    },
+    { // 33
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["400", "200"],
+        "rotation": ["90"],
+      }
+    },
+    { // 34
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["400", "-50"],
+        "rotation": ["90"],
+      }
+    },
+    { // 35
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["400", "-300"],
+        "rotation": ["90"],
+      }
+    },
+    { // 36
+      "inherit": ["wall-01"],
+      "properties": {
+        "position": ["400", "-550"],
+        "rotation": ["90"],
+      }
+    },
+
+    /* !!- trap-01 -!! */
+    { // 1
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["-50", "-100"],
+        "rotation": ["0"],
+      }
+    },
+    { // 2
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["50", "-200"],
+        "rotation": ["180"],
+      }
+    },
+    { // 17
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["50", "-500"],
+        "rotation": ["180"],
+      }
+    },
+    { // 18
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["-250", "-300"],
+        "rotation": ["-90"],
+      }
+    },
+    { // 19
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["-350", "-400"],
+        "rotation": ["90"],
+      }
+    },
+    { // 20
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["-300", "-500"],
+        "rotation": ["90"],
+      }
+    },
+    { // 26
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["-250", "-600"],
+        "rotation": ["-90"],
+      }
+    },
+    { // 44
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["250", "-500"],
+        "rotation": ["0"],
+      }
+    },
+    { // 38
+      "inherit": ["trap-01"],
+      "properties": {
+        "position": ["100", "150"],
+        "rotation": ["0"],
+      }
+    },
+
+    /* !!- trap-02 -!! */
+    { // 27
+      "inherit": ["trap-02"],
+      "properties": {
+        "position": ["-400", "-650"],
+        "rotation": ["0"],
+      }
+    },
+    { // 29
+      "inherit": ["trap-02"],
+      "properties": {
+        "position": ["200", "50"],
+        "rotation": ["0"],
+      }
+    },
+    { // 30
+      "inherit": ["trap-02"],
+      "properties": {
+        "position": ["200", "-150"],
+        "rotation": ["0"],
+      }
+    },
+    { // 31
+      "inherit": ["trap-02"],
+      "properties": {
+        "position": ["350", "-50"],
+        "rotation": ["180"],
+      }
+    },
+    { // 37
+      "inherit": ["trap-02"],
+      "properties": {
+        "position": ["350", "-700"],
+        "rotation": ["135"],
+      }
+    },
+    { // 39
+      "inherit": ["trap-02"],
+      "properties": {
+        "position": ["250", "200"],
+        "rotation": ["45"],
+      }
+    },
+    { // 42
+      "inherit": ["trap-02"],
+      "properties": {
+        "position": ["300", "-350"],
+        "rotation": ["180"],
+      }
+    },
+
+    /* !!- trap-03 -!! */
+    { // 42
+      "inherit": ["trap-03"],
+      "properties": {
+        "position": ["100", "250"],
+        "rotation": ["90"],
+      }
+    },
+
+    /* !!- trap-04 -!! */
+    { // 13
+      "inherit": ["trap-04"],
+      "properties": {
+        "position": ["100", "-350"],
+        "rotation": ["90"],
+      }
+    },
+    { // 16
+      "inherit": ["trap-04"],
+      "properties": {
+        "position": ["-150", "-500"],
+        "rotation": ["0"],
+      }
+    },
+    { // 43
+      "inherit": ["trap-04"],
+      "properties": {
+        "position": ["150", "-600"],
+        "rotation": ["0"],
+      }
+    },
+
+    /* !!- pseudo-trap-01 -!! */
+    { // 14
+      "inherit": ["pseudo-trap-01"],
+      "properties": {
+        "position": ["-50", "-400"],
+        "rotation": ["43"],
+      }
+    },
+    { // 15
+      "inherit": ["pseudo-trap-01"],
+      "properties": {
+        "position": ["-150", "-300"],
+        "rotation": ["36"],
+      }
+    },
+    { // 25
+      "inherit": ["pseudo-trap-01"],
+      "properties": {
+        "position": ["-150", "-600"],
+        "rotation": ["254"],
+      }
+    },
+    { // 32
+      "inherit": ["pseudo-trap-01"],
+      "properties": {
+        "position": ["250", "-50"],
+        "rotation": ["195"],
+      }
+    },
+    { // 40
+      "inherit": ["pseudo-trap-01"],
+      "properties": {
+        "position": ["300", "-250"],
+        "rotation": ["304"],
+      }
+    },
+    { // 41
+      "inherit": ["pseudo-trap-01"],
+      "properties": {
+        "position": ["200", "-350"],
+        "rotation": ["98"],
+      }
+    },
+
+    /* !!- win -!! */
+    {
+      "inherit": ["win-trigger-01"],
+      "properties": {
+        "position": ["0", "200"],
+      }
+    }
+  ]
+}

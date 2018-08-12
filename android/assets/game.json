@@ -2,7 +2,8 @@
   "include": [
     "game.debug.json",
     "game.objects.json",
-    "game.controllers.json"
+    "game.controllers.json",
+    "game.level-01.json"
   ],
   "classes": {
     "camera": {
@@ -20,7 +21,7 @@
       },
       "properties": {
         "zoom": ["0.5"],
-        "zoomFunction": ["fixed diagonal zoom function", "1000"]
+        "zoomFunction": ["fixed diagonal zoom function", "2000"]
       }
     },
 
@@ -139,34 +140,6 @@
     },
     {
       "inherit": ["camera"]
-    },
-
-    {
-      "inherit": ["wall-01"],
-      "properties": {
-        "position": ["0", "50"]
-      }
-    },
-
-    {
-      "inherit": ["trap-04"],
-      "properties": {
-        "position": ["0", "-150"]
-      }
-    },
-
-    {
-      "inherit": ["pseudo-trap-01"],
-      "properties": {
-        "position": ["150", "-150"]
-      }
-    },
-
-    {
-      "inherit": ["win-trigger-01"],
-      "properties": {
-        "position": ["-200", "-150"]
-      }
     },
   ]
 }
