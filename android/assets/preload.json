@@ -1,0 +1,31 @@
+{
+  "preload": {
+    "textures": [
+      "wall-01.png",
+      "ball-01.png",
+      "exit-01.png",
+      "particle.png",
+      "anim/trap-01/spike-01.png",
+      "anim/trap-01/block-01.png",
+      "anim/trap-01/spike-01.png",
+      "anim/trap-02/press-01.png",
+      "anim/player/body-01.png",
+      "anim/player/eye-01.png",
+      "anim/player/leg-01.png",
+    ],
+    "skins": [
+      "ui/uiskin.json"
+    ],
+    "particles": [
+      "death.p",
+      "death-small.p",
+      "win-01.p",
+      "win-02.p",
+      "win-03.p"
+    ],
+    "sounds": [
+      "sound-01.wav",
+      "death.wav"
+    ]
+  }
+}

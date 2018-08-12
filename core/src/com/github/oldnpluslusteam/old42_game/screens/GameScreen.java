@@ -2,8 +2,6 @@ package com.github.oldnpluslusteam.old42_game.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Container;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
@@ -16,12 +14,10 @@ import com.github.alexeybond.partly_solid_bicycle.application.impl.layers.GameLa
 import com.github.alexeybond.partly_solid_bicycle.application.impl.layers.StageLayer;
 import com.github.alexeybond.partly_solid_bicycle.application.util.ScreenUtils;
 import com.github.alexeybond.partly_solid_bicycle.drawing.Technique;
-import com.github.alexeybond.partly_solid_bicycle.drawing.tech.EDSLTechnique;
 import com.github.alexeybond.partly_solid_bicycle.game.Game;
 import com.github.alexeybond.partly_solid_bicycle.game.declarative.GameDeclaration;
 import com.github.alexeybond.partly_solid_bicycle.game.declarative.visitor.impl.ApplyGameDeclarationVisitor;
 import com.github.alexeybond.partly_solid_bicycle.ioc.IoC;
-import com.github.alexeybond.partly_solid_bicycle.ioc.IoCStrategy;
 import com.github.alexeybond.partly_solid_bicycle.util.event.Event;
 import com.github.alexeybond.partly_solid_bicycle.util.event.EventListener;
 import com.github.alexeybond.partly_solid_bicycle.util.event.props.BooleanProperty;

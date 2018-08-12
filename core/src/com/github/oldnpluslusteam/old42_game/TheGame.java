@@ -17,6 +17,7 @@ import com.github.alexeybond.partly_solid_bicycle.game.systems.tagging.modules.T
 import com.github.alexeybond.partly_solid_bicycle.ioc.modules.Modules;
 import com.github.alexeybond.partly_solid_bicycle.music.modules.GlobalMusicPlayer;
 import com.github.alexeybond.partly_solid_bicycle.resource_management.modules.ResourceManagement;
+import com.github.alexeybond.partly_solid_bicycle.resource_management.modules.ResourcesListModule;
 import com.github.oldnpluslusteam.old42_game.modules.StartupScreenModule;
 import main.java.com.github.alexeybond.partly_solid_bicycle.ext.controllers.ControllersModule;
 
@@ -46,6 +47,8 @@ public class TheGame extends Application {
 		modules.add(new SpriterAnimationModule());
 
 		modules.add(new StartupScreenModule());
+
+		modules.add(new ResourcesListModule("preload.json"));
 
 		return modules;
 	}
