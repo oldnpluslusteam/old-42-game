@@ -132,7 +132,7 @@
     { // 17
       "inherit": ["trap-01"],
       "properties": {
-        "position": ["50", "-500"],
+        "position": ["25", "-500"],
         "rotation": ["180"],
       }
     },
