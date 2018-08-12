@@ -2,4 +2,4 @@
 
 ## Recomended hardware
 
-![Schematics](./img/schematics.png)
+![Schematics](./img/schematics-01.png)
