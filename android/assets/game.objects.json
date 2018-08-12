@@ -17,6 +17,16 @@
       }
     },
 
+    "pseudo-trap": {
+      "components": {
+        "com.github.oldnpluslusteam.old42_game.components.PseudoTrapLogic$Decl": {},
+        "continuous sound": {
+          "event": "active",
+          "sound": "sound-01.wav",
+        }
+      }
+    },
+
     "wall-01": {
       "components": {
         "body": { "bodyType": "StaticBody" },
@@ -37,6 +47,7 @@
           "size": [40, 10],
           "collisionBeginEvent": "playerHit",
           "sensor": true,
+          "collisionMask": ["player"],
           "center": [20, 0],
         },
         "block": {
@@ -59,6 +70,7 @@
           "size": [50, 60],
           "collisionBeginEvent": "playerHit",
           "sensor": true,
+          "collisionMask": ["player"],
           "center": [25, 0],
         },
         "block": {
@@ -81,6 +93,7 @@
           "size": [50, 30],
           "collisionBeginEvent": "playerHit",
           "sensor": true,
+          "collisionMask": ["player"],
           "center": [-25, 0],
         },
         "block": {
@@ -106,6 +119,7 @@
           "size": [100, 30],
           "collisionBeginEvent": "playerHit",
           "sensor": true,
+          "collisionMask": ["player"],
           "center": [0, 0],
         },
         "block1": {
@@ -125,5 +139,29 @@
         },
       }
     },
+
+    "pseudo-trap-01": {
+      "inherit": ["pseudo-trap"],
+      "components": {
+        "body": { "bodyType": "DynamicBody" },
+        "sensor": {
+          "type": "circle fixture",
+          "radius": 50,
+          "collisionBeginEvent": "playerHit",
+          "collisionEndEvent": "playerHitEnd",
+          "collisionMask": ["player"],
+          "sensor": true,
+          "center": [0, 0],
+        },
+        "circle fixture": {
+          "radius": 20,
+          "restitution": 1000,
+        },
+        "sprite": {
+          "sprite": "ball-01",
+          "scale": 0.18
+        },
+      }
+    }
   }
 }

@@ -15,8 +15,8 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="player-01.svg"
-   inkscape:export-filename="D:\code\old-42-game\android\assets\anim\player\body-01.png"
+   sodipodi:docname="ball-01.svg"
+   inkscape:export-filename="D:\code\old-42-game\android\assets\ball-01.png"
    inkscape:export-xdpi="384.00003"
    inkscape:export-ydpi="384.00003">
   <defs
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.919596"
-     inkscape:cx="26.938487"
-     inkscape:cy="35.16778"
+     inkscape:zoom="11.2"
+     inkscape:cx="22.746722"
+     inkscape:cy="35.608505"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -114,7 +114,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -124,26 +124,9 @@
      id="layer1"
      transform="translate(0,-280.06665)">
     <path
-       style="fill:#bebebe;stroke:#bebebe;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0;fill-opacity:1"
-       d="m 2.1166667,290.91457 c -1.25592848,-3.11871 0.9741718,-4.6561 0.79375,-6.35 -0.2645834,-2.38125 0.502486,-2.43012 2.9104166,-2.64584 3.7041667,0.52917 2.1166667,0.52917 4.2333337,0.26459 1.852083,0 2.645833,-1.32292 3.175,1.05833 0.529166,2.38125 1.852083,-0.26458 1.587499,2.64583 -0.264583,2.91042 0.793751,2.11667 0.264584,3.70417 -0.979317,2.93795 -0.79375,3.70417 -2.116667,4.23333 -0.529166,0.52917 -0.232216,3.10839 -2.910416,1.32292 -1.5875003,-1.05833 -2.3812503,-1.05833 -3.4395838,-0.26458 -1.419901,1.06493 -1.5874999,0.52916 -2.1166666,0 C 3.96875,294.35415 3.175,295.41248 3.175,293.29582 c 0,-2.11667 0.1975951,0.73745 -1.0583333,-2.38125 z"
-       id="path8465"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="zcccssscsscsz" />
-    <rect
-       style="fill:#fcfcfc;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6774"
-       width="4.2333331"
-       height="4.2333269"
-       x="6.3500004"
-       y="286.41666"
-       ry="2.1166635" />
-    <rect
-       style="fill:#070707;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26499999;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect6776"
-       width="1.0583333"
-       height="1.0583333"
-       x="7.9375"
-       y="288.00415"
-       ry="0.52916664" />
+       style="fill:#bebebe;stroke:#bebebe;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:0;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       d="m 0.52916666,288.53332 v -2.38125 l 1.32291664,-1.05834 0.79375,-1.05833 -0.2645844,-0.79375 0.5291683,-0.26458 1.0583328,-0.26459 0.2645833,0.52917 0.2645833,-1.85208 0.79375,-0.79375 1.3229166,-0.26459 0.79375,0.52917 1.5875,-0.52917 1.8520838,0.26459 0.529166,0.79375 2.116667,0.79375 0.529166,0.79375 1.058334,1.05833 -0.264584,0.79375 1.322917,1.05833 0.264583,1.85209 -1.058333,0.52916 h -2.116666 l -1.5875,-2.38125 0.79375,-2.11666 -0.79375,0.52916 -0.264584,1.85209 v 1.32291 l 1.058334,0.79375 0.529166,0.52917 h 1.058333 l 1.322917,0.52917 0.79375,-0.26459 0.529167,0.52917 -0.79375,1.05833 -0.264584,1.5875 -0.79375,0.52917 -0.529166,1.5875 -1.5875,0.52917 -1.058333,1.05833 -0.79375,-0.26458 -1.3229171,0.79375 -0.79375,-1.5875 0.5291667,-1.32292 H 8.9958332 l -0.79375,1.05833 0.2645834,1.32292 -0.5291667,0.52917 -1.3229167,-0.26459 -1.0583333,0.26459 -0.5291666,-1.32292 -1.3229167,-1.05833 -1.0583343,0.26458 -0.793749,-2.11667 -1.05833331,-1.5875 -0.52916666,-1.32291 z"
+       id="path8469"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

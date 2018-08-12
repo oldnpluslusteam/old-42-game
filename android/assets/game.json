@@ -109,6 +109,13 @@
       "properties": {
         "position": ["0", "-150"]
       }
+    },
+
+    {
+      "inherit": ["pseudo-trap-01"],
+      "properties": {
+        "position": ["150", "-150"]
+      }
     }
   ]
 }
