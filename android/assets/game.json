@@ -21,7 +21,7 @@
       },
       "properties": {
         "zoom": ["0.5"],
-        "zoomFunction": ["fixed diagonal zoom function", "2000"]
+        "zoomFunction": ["fixed diagonal zoom function", "1000"]
       }
     },
 

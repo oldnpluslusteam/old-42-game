@@ -11,6 +11,9 @@ public class DesktopLauncher {
 		IoC.init(new SingleContextHolder());
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.forceExit = false;
+		config.fullscreen = true;
+		config.height = 1080;
+		config.width = 1920;
 		new LwjglApplication(new TheGame(), config);
 	}
 }
